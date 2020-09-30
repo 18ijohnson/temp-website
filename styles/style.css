@@ -91,7 +91,7 @@ main {
 
 .nav__link {
   list-style: none;
-  padding: 2rem 0;
+  padding: 1rem 2rem;
 }
 
 .nav__link a {
@@ -147,9 +147,7 @@ main {
 
 .resume__link {
   grid-area: main;
-  max-width: -webkit-fit-content;
-  max-width: -moz-fit-content;
-  max-width: fit-content;
+  max-width: 200px;
   margin: 0 auto;
   padding: 1rem 2rem;
   border-radius: 75px;
@@ -209,6 +207,9 @@ main {
   .nav__list {
     padding: 1rem 10px;
   }
+  .nav__link {
+    padding: 1rem 3px;
+  }
   .resume {
     height: 150px;
   }
@@ -217,6 +218,9 @@ main {
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
   .contact__item-container {
     display: block;
+  }
+  .nav {
+    display: none;
   }
 }
 /*# sourceMappingURL=style.css.map */
