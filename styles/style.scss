@@ -78,7 +78,7 @@ main{
   }
   &__link{
     list-style: none;
-    padding: 0.25rem 0;
+    padding: 2rem 0;
     a{
       text-decoration: none;
       color: white;
@@ -161,115 +161,6 @@ main{
   }
 }
 
-.featured{
-  position: relative;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-
-  background-color: #ffffff;
-  margin: 60px 1rem 0 1rem;
-  padding: .8rem 0;
-  border: 2px solid #c1c1c1;
-
-  &__header{
-    position: absolute;
-    top: -50px;
-    display: flex;
-    height: 50px;
-    width: calc(100% + 4px);
-    padding: 0rem 1.5rem;
-    background-color: #eaeaea;
-    border: 2px solid #c1c1c1;
-    border-radius: 10px 10px 0 0;
-  }
-  &__headerTitle{
-    position: absolute;
-    text-align: center;
-    left: 0;
-    right: 0;
-    top: 50%;
-    transform: translate(0, -50%);
-  }
-  &__altHeaderTitle{
-    display: none;
-    margin-top: 1rem;
-    text-align: center;
-  }
-  &__headerLink{
-    margin: auto 0 auto auto;
-    padding: .25rem .75rem;
-    border: 2px solid #c1c1c1;
-    border-radius: 5px;
-
-    cursor: pointer;
-    z-index: 1;
-    background: inherit;
-
-    color: black;
-    text-decoration: none;
-
-    &:hover{
-      filter: brightness(0.8);;
-    }
-  }
-
-  &__card{
-    position: relative;
-    background: white;
-    width: 375px;
-    max-width: 95%;
-    height: 35rem;
-    margin: 1rem;
-    box-shadow: 0 3px 6px 3px rgba(black, .25);
-    border-radius: 10px;
-    text-align: center;
-  }
-
-  &__img{
-    width: 100%;
-    height: auto;
-    border-radius: 10px 10px 0 0;
-  }
-
-  &__category{
-    color: #1e824c;
-    font-size: 14px;
-    font-weight: 500;
-  }
-
-  &__description{
-    width: 90%;
-    height: fit-content;
-    margin: 0.5rem auto 0 auto;
-  }
-  &__links{
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    display: flex;
-  }
-  &__link{
-    display: grid;
-    grid-template-rows: auto auto;
-    justify-items: center;
-    width: calc(100% / 3);
-    padding: .5rem 0;
-    background: #1e824c;
-    color: white;
-    text-decoration: none;
-    border-left: thin solid rgba(black, .2);
-    border-right: thin solid rgba(black, .2);
-
-    &--left{ border-radius: 0 0 0 10px;}
-    &--right{ border-radius: 0 0 10px 0;}
-
-    &:hover{
-      filter: brightness(0.8);
-    }
-  }
-}
 
 @media screen and (max-width: 750px){
   .contact{
@@ -288,3 +179,10 @@ main{
     height: 150px;
   }
 }
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .contact{
+    &__item-container{
+      display: block;
+    }
+  }
+  }
